@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App Client</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <hr/>
+    <div>
+        <p style="color:red;" id="error_msg"></p>
+    </div>
+    <div id="centerContent">
+        <div id="listPane">
+            <table id="listTable" border="1">
+                <tr><th>Loading data...</th></tr>
+            </table>
+        </div>
+        <hr/>
+        <div id="viewAddEditPane">
+            Current Id: <span id="currentId">-</span><br>
+            Task: <input type="text" name="task" onchange="enableAddSave()" ><br>
+            Due date: <input type="date" name="due" onchange="enableAddSave()" ><br>
+            Is done: <input type="checkbox" name="status" onchange="enableAddSave()" ><br>
+            <button id="saveOrAdd" onclick="addsave()" disabled>Save or Add</button>
+            <button id="deletes" onclick="deletes()" disabled>Delete</button>
+            <button id="cancels" onclick="cancels()">Cancel</button>
+        </div>
+        <div>
+            <hr/>
+            <p>Status: <b><span id="result">-</span></b></p>
+        </div>
+    </div>
+    
+    <script src="/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+body {
+    background-color: #ffffcc;
+}
+
+#centerContent {
+    width: 740px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: white;
+}
+
+#listPane {
+    border: darkgray 1px solid;
+    width: 340px;
+    display: inline-table;
+}
+
+#viewAddEditPane {
+    border: darkgray 1px solid;
+    width: 340px;
+    display: inline-table;
+}
