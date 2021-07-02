@@ -8,7 +8,7 @@ import { Todo } from '../models/todo.model';
   providedIn: 'root'
 })
 export class TodosService {
-  urlBase: string = "http://todo.api";//"http://edwin-todos.ipd24.ca";
+  urlBase: string = "http://edwin-todos.ipd24.ca"; /* "http://todo.api"; //local */
   constructor(private http: HttpClient) { }
   
   getAll():Observable<Todo[]>
